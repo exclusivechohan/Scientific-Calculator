@@ -1,0 +1,147 @@
+/* styles.css */
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    background: #ecf0f3;
+    transition: background 0.3s;
+}
+
+body.dark {
+    background: #2b2b2b;
+    color: #f1f1f1;
+}
+
+.container {
+    margin-left: 1.8em;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 13px 13px 20px #cbced1,
+        -13px -13px 20px #ffffff;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+
+body.dark .container {
+    box-shadow: 13px 13px 20px #1c1c1c,
+        -13px -13px 20px #3a3a3a;
+}
+
+.content {
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.row button {
+    width: 60px;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: .1s;
+    box-shadow: 5px 5px 8px #00000020,
+        -5px -5px 8px #ffff;
+}
+
+body.dark .row button {
+    box-shadow: 5px 5px 8px #121212,
+        -5px -5px 8px #333333;
+}
+
+.row button:hover {
+    box-shadow: inset 5px 5px 8px rgba(16, 16, 16, .1),
+        inset -5px -5px 8px #fff;
+    background: #fff;
+}
+
+body.dark .row button:hover {
+    box-shadow: inset 5px 5px 8px #1a1a1a,
+        inset -5px -5px 8px #444444;
+    background: #333333;
+}
+
+.display #screen {
+    margin-bottom: .5em;
+    width: auto;
+    height: 70px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    text-align: right;
+    padding-right: .5em;
+    background: #ecf0f3;
+    border-radius: 6px;
+    box-shadow: inset 8px 8px 8px #cbced1,
+        inset -8px -8px 8px #ffffff;
+    transition: box-shadow 0.3s, background 0.3s, color 0.3s;
+}
+
+body.dark .display #screen {
+    background: #2b2b2b;
+    box-shadow: inset 8px 8px 8px #1c1c1c,
+        inset -8px -8px 8px #3a3a3a;
+    color: #f1f1f1;
+}
+
+#eval {
+    background: #33ccff;
+    color: #fff;
+    box-shadow: inset 5px 5px 8px #66d9ff,
+        inset -5px -5px 8px #00ace6;
+}
+
+#eval:hover {
+    box-shadow: inset 5px 5px 8px #00ace6,
+        inset -5px -5px 8px #00ace6;
+}
+
+#ac {
+    background: #33cc33;
+    color: #fff;
+}
+
+#ac:hover {
+    box-shadow: inset 5px 5px 8px #2eb82e,
+        inset -5px -5px 8px #33cc33;
+}
+
+#ce {
+    background: #ff3399;
+    color: #fff;
+}
+
+#ce:hover {
+    box-shadow: inset 5px 5px 8px #e60073,
+        inset -5px -5px 8px #ff3399;
+}
+
+#themeToggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ecf0f3;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 3px 3px 8px #cbced1,
+        -3px -3px 8px #ffffff;
+    cursor: pointer;
+    transition: box-shadow 0.3s, background 0.3s;
+}
+
+body.dark #themeToggle {
+    background: #2b2b2b;
+    box-shadow: 3px 3px 8px #1c1c1c,
+        -3px -3px 8px #3a3a3a;
+    color: #f1f1f1;
+}
